@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=DM+Serif+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #605041;
+}
+
+.logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #C7AC8F;
+}
+
+nav a {
+    font-size: 18px;
+    color: #C7AC8F;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline #C7AC8F 1px;
+}
+
+#Home, #About, #Encode {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C7AC8F;
+}
+
+#Home h1, #Home .btn {
+    display: block;
+}
+
+#About a {
+    color: #605041;
+    text-decoration: underline wavy #605041 1px;
+    transition: .5s;
+}
+
+#About a:hover {
+    transition: .5s;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#Contact {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background-color: #605041;
+}
+
+#Contact p {
+    color: #E9E1D6;
+    font-size: 16px;
+    padding: 20px 80px;
+}
+
+
+.encode-container {
+    text-align: center;
+}
+
+#output {
+    margin-top: 10px;
+}
+
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #605041;
+    margin-top: px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 120px;
+    color: #605041;
+    margin: 10px;
+}
+
+.btn a {
+    background-color: #605041;
+    color: #E9E1D6;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    height: 36px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin: 24px 0;
+    font-size: 18px;
+    border-style: none;
+}
+
+button {
+    margin: 24px 0;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #605041;
+    color: #E9E1D6;
+    border-style: none;
+}
+
+table {
+    align-items: center;
+    text-align: center;
+    background-color: #605041;
+}
+
+th {
+    color: #C7AC8F;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+td {
+    color: #E9E1D6 ;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+/*Screen*/
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 50px; 
+    }
+    h1 {
+        font-size: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    nav a {
+        display: none;
+    }
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
